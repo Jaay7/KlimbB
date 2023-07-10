@@ -37,8 +37,12 @@ export const chatSlice = createSlice({
         botmessage: action.payload.botmessage,
       });
     },
+    clearAllChats: () => {
+      localStorage.removeItem("persist:root");
+      return initialState;
+    },
   },
 });
 
 export default chatSlice.reducer;
-export const { addChat } = chatSlice.actions;
+export const { addChat, clearAllChats } = chatSlice.actions;

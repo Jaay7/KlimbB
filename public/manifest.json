@@ -7,5 +7,6 @@
     "default_title": "KlimbB Extension",
     "default_popup": "popup.html"
   },
-  "permissions": ["storage", "tabs", "activeTab", "declarativeContent"]
+  "permissions": ["storage", "tabs", "activeTab", "declarativeContent"],
+  "host_permissions": ["https://www.youtube.com/watch?v*"]
 }
